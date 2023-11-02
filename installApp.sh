@@ -46,5 +46,9 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/obs-o
 apt update
 apt install --no-install-recommends --no-install-suggests onedrive
 
+wget -P /home/antak/AppImages https://github.com/obsidianmd/obsidian-releases/releases/download/v1.4.16/Obsidian-1.4.16.AppImage
+chmod u+x /home/antak/AppImages/Obsidian-1.4.16.AppImage
+
+cp //home/antak/AppImages/Obsidian.desktop /usr/share/applications/
 
 
