@@ -34,6 +34,17 @@ cd /home/antak/AppImages
 wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.0.5.17700.tar.gz
 tar -xvzf jetbrains-toolbox-2.0.5.17700.tar.gz -C /home/antak/AppImages
 
+apt update
+apt upgrade -y
+apt dist-upgrade -y
+apt autoremove -y
+apt autoclean -y
+reboot
+
+wget -qO - https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_23.04/Release.key | gpg --dearmor | sudo tee /usr/share/keyrings/obs-onedrive.gpg > /dev/null
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/obs-onedrive.gpg] https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_23.04/ ./" | sudo tee /etc/apt/sources.list.d/onedrive.list
+apt update
+apt install --no-install-recommends --no-install-suggests onedrive
 
 
 
