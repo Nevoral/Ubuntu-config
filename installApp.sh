@@ -29,6 +29,7 @@ apt install flatpak -y
 apt install gnome-software-plugin-flatpak -y
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub com.usebottles.bottles
+flatpak install flathub org.mozilla.firefox
 mkdir /home/antak/AppImages
 cd /home/antak/AppImages
 wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.0.5.17700.tar.gz
