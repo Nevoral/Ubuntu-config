@@ -1,28 +1,11 @@
 #!/bin/bash
 
-snap install vlc
-snap install thunderbird
-snap install teams-for-linux
-snap install inkscape
-snap install caprine
-snap install whatsie
-snap install discord
 snap install tradingview
-snap install blender --classic
 snap install transitionsdj
-snap install spotify
-snap install audacity
-snap install bitwarden
-snap install gnome-calculator
-snap install amberol
-snap install gnome-calendar
-snap install libreoffice
-snap install steam
+snap install htop
 dpkg --add-architecture i386
 apt update
 apt install libnvidia-gl-535:i386
-apt install lutris -y
-apt install wine -y
 apt install winetricks -y
 apt install libfuse2
 apt install flatpak -y
@@ -30,6 +13,26 @@ apt install gnome-software-plugin-flatpak -y
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub com.usebottles.bottles
 flatpak install flathub org.mozilla.firefox
+flatpak install flathub org.mozilla.Thunderbird
+flatpak install flathub com.valvesoftware.Steam
+flatpak install flathub com.sindresorhus.Caprine
+flatpak install flathub com.ktechpit.whatsie
+flatpak install flathub com.github.IsmaelMartinez.teams_for_linux
+flatpak install flathub com.teamspeak.TeamSpeak
+flatpak install flathub com.discordapp.Discord
+flatpak install flathub com.spotify.Client
+flatpak install flathub org.inkscape.Inkscape
+flatpak install flathub org.blender.Blender
+flatpak install flathub io.bassi.Amberol
+flatpak install flathub org.audacityteam.Audacity
+flatpak install flathub com.bitwarden.desktop
+flatpak install flathub org.gnome.Calendar
+flatpak install flathub org.gnome.Calculator
+flatpak install flathub com.obsproject.Studio
+flatpak install flathub org.videolan.VLC
+flatpak install flathub org.libreoffice.LibreOffice
+flatpak install flathub net.lutris.Lutris
+flatpak install flathub org.winehq.Wine
 mkdir /home/antak/AppImages
 cd /home/antak/AppImages
 wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.0.5.17700.tar.gz
