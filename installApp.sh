@@ -2,6 +2,7 @@
 
 snap install tradingview
 snap install transitionsdj
+snap install whatsie
 snap install htop
 dpkg --add-architecture i386
 apt update
@@ -11,28 +12,27 @@ apt install libfuse2
 apt install flatpak -y
 apt install gnome-software-plugin-flatpak -y
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub com.usebottles.bottles
-flatpak install flathub org.mozilla.firefox
-flatpak install flathub org.mozilla.Thunderbird
-flatpak install flathub com.valvesoftware.Steam
-flatpak install flathub com.sindresorhus.Caprine
-flatpak install flathub com.ktechpit.whatsie
-flatpak install flathub com.github.IsmaelMartinez.teams_for_linux
-flatpak install flathub com.teamspeak.TeamSpeak
-flatpak install flathub com.discordapp.Discord
-flatpak install flathub com.spotify.Client
-flatpak install flathub org.inkscape.Inkscape
-flatpak install flathub org.blender.Blender
-flatpak install flathub io.bassi.Amberol
-flatpak install flathub org.audacityteam.Audacity
-flatpak install flathub com.bitwarden.desktop
-flatpak install flathub org.gnome.Calendar
-flatpak install flathub org.gnome.Calculator
-flatpak install flathub com.obsproject.Studio
-flatpak install flathub org.videolan.VLC
-flatpak install flathub org.libreoffice.LibreOffice
-flatpak install flathub net.lutris.Lutris
-flatpak install flathub org.winehq.Wine
+flatpak install flathub com.usebottles.bottles -y
+flatpak install flathub org.mozilla.firefox -y
+flatpak install flathub org.mozilla.Thunderbird -y
+flatpak install flathub com.valvesoftware.Steam -y
+flatpak install flathub com.sindresorhus.Caprine -y
+flatpak install flathub com.github.IsmaelMartinez.teams_for_linux -y
+flatpak install flathub com.teamspeak.TeamSpeak -y
+flatpak install flathub com.discordapp.Discord -y
+flatpak install flathub com.spotify.Client -y
+flatpak install flathub org.inkscape.Inkscape -y
+flatpak install flathub org.blender.Blender -y
+flatpak install flathub io.bassi.Amberol -y
+flatpak install flathub org.audacityteam.Audacity -y
+flatpak install flathub com.bitwarden.desktop -y
+flatpak install flathub org.gnome.Calendar -y
+flatpak install flathub org.gnome.Calculator -y
+flatpak install flathub com.obsproject.Studio -y
+flatpak install flathub org.videolan.VLC -y
+flatpak install flathub org.libreoffice.LibreOffice -y
+flatpak install flathub net.lutris.Lutris -y
+flatpak install flathub org.winehq.Wine -y
 mkdir /home/antak/AppImages
 cd /home/antak/AppImages
 wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.0.5.17700.tar.gz
